@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVibe - Your Entertainment Hub</title>
+    <link rel="stylesheet" href="make.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">StreamVibe</div>
+            <nav class="nav-links">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">Movies</a>
+                <a href="#" class="nav-link">Shows</a>
+                <a href="#" class="nav-link">My List</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-box" placeholder="Search...">
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="heroSection">
+        <div class="hero-content">
+            <h1 id="heroTitle">Featured Title</h1>
+            <p id="heroDescription">Discover amazing content</p>
+            <div class="hero-buttons">
+                <button class="btn btn-play" id="playBtn">▶ Play</button>
+                <button class="btn btn-info" id="infoBtn">ℹ More Info</button>
+            </div>
+        </div>
+        <div class="hero-image" id="heroImage"></div>
+    </section>
+
+    <!-- Genre Sections -->
+    <div class="container">
+        <section class="genre-section">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="movie-carousel" id="trendingCarousel"></div>
+        </section>
+
+        <section class="genre-section">
+            <h2 class="section-title">Up Coming</h2>
+            <div class="movie-carousel" id="actionCarousel"></div>
+        </section>
+
+        <section class="genre-section">
+            <h2 class="section-title">Recommended For You</h2>
+            <div class="movie-carousel" id="recommendedCarousel"></div>
+        </section>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Video Player</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="video-container">
+                <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content info-modal">
+            <span class="close-button">&times;</span>
+            <div class="info-content">
+                <img id="infoImage" src="" alt="Movie Poster" class="info-image">
+                <div class="info-details">
+                    <h1 id="infoTitle">Title</h1>
+                    <p class="info-meta">
+                        <span id="infoYear">2025</span> • 
+                        <span id="infoRating">★ 8.5</span>
+                    </p>
+                    <p id="infoDescription" class="info-description">Description goes here</p>
+                    <div class="info-buttons">
+                        <button class="btn btn-play" id="infoPlayBtn">▶ Play</button>
+                        <button class="btn btn-add">+ Add to List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 StreamVibe. All rights reserved.</p>
+        <p>@copywright belongs to snehith</p>
+    </footer>
+
+    <script src="work.js"></script>
+</body>
+</html>
