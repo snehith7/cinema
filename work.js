@@ -30,7 +30,7 @@ let movies = [
         description:"In vibrant Gaurapuram, quirky Raju meets spirited Charulatha, triggering delightful events. Their story unfolds at a grand wedding in this humorous family festival entertainer",
         poster:"https://preview.redd.it/anaganaga-oka-raju-was-fine-but-v0-oubnwiakxfdg1.png?width=640&crop=smart&auto=webp&s=5296a48214639d72b55f419e9b5cee58b2e6054f",
         driveId:"",
-        category:"upcoming , Recommended"
+        category:"upcoming, recommended"
     }
 
 ];
