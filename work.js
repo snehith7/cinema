@@ -9,7 +9,7 @@ let movies = [
         description: "Four nerdy comic book enthusiasts find themselves in an unexpected adventure when their school's charming new professor turns their academic world upside down with supernatural events.",
         // Get this link by right-clicking any movie poster on Google and choosing "Copy Image Address"
         poster: "https://img.airtel.tv/unsafe/fit-in/1600x0/filters:format(webp)/https://xstreamcp-assets-msp.streamready.in/assets/HOTSTAR_DTH/MOVIE/690de3dcbd29c33a8a099608/images/LANDSCAPE_169/1749046165724-h?o=production", 
-        driveId: "https://drive.google.com/file/d/1O6P98Te-fad_w6iFJADIeX6QqEDPTKeL/view?usp=drive_link",
+        driveId: "",
         category: "trending"
     },
     {
@@ -20,7 +20,17 @@ let movies = [
         description: "A security officer protecting his estranged wife and kids from a vengeful ex-cop sees it as a chance to rebuild their relationship after six years apart.",
         poster: "https://m.media-amazon.com/images/M/MV5BMTI3NWE5YjEtMmJkZi00OTUzLWI3YzMtMmNmYjEzNzdhMmM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         driveId: "",
-        category: "action"
+        category: "trending"
+    },
+    {
+        id:3,
+        title:"Anaganaga Oka Raju",
+        year:2026,
+        rating:"8.5",
+        description:"In vibrant Gaurapuram, quirky Raju meets spirited Charulatha, triggering delightful events. Their story unfolds at a grand wedding in this humorous family festival entertainer",
+        poster:"https://preview.redd.it/anaganaga-oka-raju-was-fine-but-v0-oubnwiakxfdg1.png?width=640&crop=smart&auto=webp&s=5296a48214639d72b55f419e9b5cee58b2e6054f",
+        driveId:"",
+        category:"upcoming , Recommended"
     }
 
 ];
@@ -80,12 +90,12 @@ function loadHeroSection() {
 }
 
 function loadCarousels() {
-    const categories = ['trending', 'action', 'recommended'];
+    const categories = ['trending', 'action', 'recommended','upcoming'];
     categories.forEach(cat => {
         const carousel = document.getElementById(`${cat}Carousel`);
         if (carousel) {
             carousel.innerHTML = '';
-            movies.filter(m => m.category === cat).forEach(movie => {
+            movies.filter(m => m.category.toLowerCase().includes(cat)).forEach(movie => {
                 carousel.appendChild(createMovieCard(movie));
             });
         }
