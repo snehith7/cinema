@@ -19,7 +19,7 @@ let movies = [
         rating: "9.0",
         description: "A security officer protecting his estranged wife and kids from a vengeful ex-cop sees it as a chance to rebuild their relationship after six years apart.",
         poster: "https://m.media-amazon.com/images/M/MV5BMTI3NWE5YjEtMmJkZi00OTUzLWI3YzMtMmNmYjEzNzdhMmM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        driveId: "",
+        driveId: "https://drive.google.com/file/d/1QuAKfZ2vp8UtvX5xYt_AIYmieAYK9vCe/view?usp=drive_link",
         category: "trending"
     },
     {
@@ -162,4 +162,5 @@ function setupEventListeners() {
         });
     }
 }
+
 
